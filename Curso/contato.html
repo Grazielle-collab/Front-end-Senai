@@ -13,27 +13,54 @@
     <section>
         <!-- Conteudo de texto sobre o site -->
         <article>
-            <h1>Formulario de contato</h1>
+            <h1>Formulario do contato</h1>
             <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
 
             <fieldset>
                 <legend>
-                    <h5>Dados de contatos</h5>
+                    <h5>Dados do contato</h5>
                 </legend>
                 <form id="frmInscrição" action="contato.php" method="POST">
 
-                    <label>nOME:</label><br>
+                    <label>Nome:</label><br>
+                    <input type="text" required="required" id="txtnome" maxlength="100" size="50"><br><br>
+
+                    <!-- Atividade 2: completar as opções de sexo da pessoa de modo que apnas uma opção possa se selecionada -->
+                    <label>Sexo</label><br>
                     <input type="radio" name="rdoSexo" value="M" required="required">
                     <label>Masculino</label>
                     <br><br>
 
                     <!-- Atividade 3: incluir um campo para o endereço -->
 
-                    
+                    <label>Estado:</label><br>
+                    <select id="cbxEstado" required="required">
+                        <option value="">-Selecione</option>
+                        <option value="1">SC</option>
+                        <option value="2">MG</option>
+                    </select><br><br>
+
+                    <!-- Atividade 4: incluir um campo para a cidade similar ao do estado -->
+
+                    <!-- Atividade 5: incluir um campo para o celular contendo placeholder -->
+
+                    <label>E-mail</label><br>
+                    <input type="checkbox" value="JavaScript" name="chkAreasInteresse">
+                    <label>JavaScript</label><br><br>
+
+                    <!-- Atividade 7: incluir um campo para a mensagem -->
+                    <!-- Atividade 8: incluir um botão para enviar o formulario -->
+
                 </form>
             </fieldset>
+
         </article>
+        <!-- Fim do conteudo de texto sobre o site -->
     </section>
+    <!-- Fim da section do conteudo do site -->
   </main>
+  <!-- Fim do main -->
+  <!-- Atividade 9: criar a seção 'footer' identica á da página inicial -->
 </body>
+
 </html>
